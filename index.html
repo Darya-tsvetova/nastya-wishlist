@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ff5cab">
+<title>Насте 14 ♡ Wishlist</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Unbounded:wght@500;700;900&display=swap');
+:root{--ink:#281636;--pink:#ff60ac;--purple:#8353ee;--lime:#d7ff65;--paper:#fff8fd}
+*{box-sizing:border-box}body{margin:0;font-family:Manrope,Arial,sans-serif;background:var(--paper);color:var(--ink)}button,input,select,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.6}a{color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 18px}header{background:#ffffffd9;border-bottom:2px solid #f3d9ee;position:sticky;top:0;z-index:10;backdrop-filter:blur(14px)}nav{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:72px}.logo{font-family:Unbounded;font-size:14px;font-weight:900}.logo b{color:#ef3a98}.navbuttons{display:flex;gap:8px;flex-wrap:wrap}.btn{border:2px solid var(--ink);border-radius:13px;background:white;padding:11px 16px;font-weight:800;color:var(--ink)}.btn.primary{background:var(--lime)}.btn.pink{background:var(--pink)}.btn.dark{background:var(--ink);color:white}.btn:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--purple);outline-offset:2px}.hero{text-align:center;padding:65px 10px 67px;background:radial-gradient(ellipse at 20% 15%,#ffd6ec 0,transparent 38%),radial-gradient(ellipse at 80% 65%,#ded0ff 0,transparent 35%)}.pill{display:inline-block;background:var(--lime);border:2px solid var(--ink);border-radius:50px;padding:9px 16px;transform:rotate(-3deg);font-size:12px;font-weight:900;box-shadow:4px 4px 0 var(--ink)}h1,h2,h3{font-family:Unbounded,sans-serif}h1{font-size:clamp(42px,9vw,91px);line-height:1.12;letter-spacing:-.075em;margin:34px 0 24px}h1 span{color:#f43c9a}h1 em{color:var(--purple);font-style:normal}.hero p{color:#70617b;max-width:600px;margin:auto;line-height:1.8}.ribbon{background:var(--purple);color:white;overflow:hidden;text-align:center;padding:14px 8px;font-family:Unbounded;font-size:12px;letter-spacing:1px}.content{padding-top:45px;padding-bottom:70px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;flex-wrap:wrap}.section-head h2{font-size:clamp(22px,4vw,38px);letter-spacing:-.05em;margin:0}.section-head p{color:#807187;font-size:13px;max-width:400px}.controls{display:flex;gap:10px;flex-wrap:wrap;margin:25px 0}input,select,textarea{border:2px solid #e8d9ea;background:white;border-radius:13px;padding:12px;width:100%;color:var(--ink)}.controls input{max-width:280px}.controls select{max-width:210px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.card{background:white;border:2px solid #eadbea;border-radius:23px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:5px 7px 0 #ead7f6}.art{height:220px;background:linear-gradient(135deg,#ffd4e9,#e3d5ff);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.art img{width:100%;height:100%;object-fit:cover}.art .placeholder{font-size:77px}.tag{position:absolute;top:12px;left:12px;background:var(--lime);border:1.5px solid var(--ink);border-radius:100px;padding:7px 12px;font-size:10px;font-weight:900;max-width:80%}.body{padding:19px}.category{font-weight:800;color:var(--purple);font-size:11px;text-transform:uppercase}.body h3{font-size:15px;line-height:1.5;min-height:46px;margin:10px 0}.description{font-size:12px;color:#7f7089;line-height:1.7;min-height:40px;white-space:pre-wrap}.price{font-family:Unbounded;font-weight:800;margin:14px 0}.actions{display:flex;gap:8px;flex-wrap:wrap}.actions>*{flex:1;text-align:center;font-size:12px;text-decoration:none}.reserved{background:#e8e3eb;color:#7c6e82}.busy-note{font-size:12px;color:#64516c}.error-banner{background:#fff0d6;border:2px solid #ad6713;padding:14px;border-radius:13px;margin-bottom:14px}.btn[aria-busy="true"]{opacity:.6;pointer-events:none}.note{background:var(--lime);border:2px solid var(--ink);box-shadow:6px 7px 0 var(--ink);padding:27px;border-radius:20px;text-align:center;margin:25px 0 70px;line-height:1.8}footer{background:var(--ink);color:white;text-align:center;padding:45px 15px}footer strong{font-family:Unbounded}dialog{border:2px solid var(--ink);border-radius:22px;width:min(520px,95vw);max-height:88vh;padding:25px;background:white;box-shadow:8px 9px 0 #c5a6df}dialog::backdrop{background:#2613339e}form{display:grid;gap:12px}form label{display:grid;gap:6px;font-size:13px;font-weight:800}.form-actions{display:flex;justify-content:end;gap:10px;flex-wrap:wrap;margin-top:10px}.hint{font-size:12px;color:#80748a;line-height:1.6}.status{padding:11px;border-radius:10px;background:#f5ecfa;font-size:13px}.empty{grid-column:1/-1;text-align:center;padding:50px 10px;color:#756682}.admin-only{display:none}.is-admin .admin-only{display:inline-flex}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,100px);background:var(--ink);color:white;padding:14px 20px;border-radius:13px;transition:.25s;z-index:30;opacity:0;max-width:95vw}.toast.visible{transform:translate(-50%,0);opacity:1}@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.logo{font-size:11px}.navbuttons .btn{font-size:11px;padding:9px}.grid{gap:10px}.art{height:145px}.art .placeholder{font-size:59px}.body{padding:12px}.body h3{font-size:12px}.description{font-size:10px}.price{font-size:12px}.actions .btn{font-size:10px;padding:10px 6px}.tag{font-size:9px;padding:6px 8px}.controls input,.controls select{max-width:none}h1{font-size:46px}}
+</style>
+</head>
+<body>
+<header><nav class="wrap"><div class="logo">NASTYA<b>.WISHLIST</b> 🎀</div><div class="navbuttons"><button id="shareBtn" class="btn">🔗 Ссылка</button><button id="adminBtn" class="btn">🔐 Вход Насти</button><button id="addBtn" class="btn primary admin-only">＋ Подарок</button></div></nav></header>
+<section class="hero"><span class="pill">✦ THE BIRTHDAY ERA ✦</span><h1>НАСТЕ<br><span>14 ЛЕТ!</span><br><em>OMG ♡</em></h1><p>Мой вишлист на день рождения 💖 Тут всё, о чём я мечтаю. Выбирайте подарок, который вам понравится, и бронируйте его, чтобы не было повторов!</p></section>
+<div class="ribbon">★ MAKE A WISH ★ BIRTHDAY GIRL ★ 14 YEARS OF MAGIC ★</div>
+<main class="wrap content"><div class="section-head"><div><h2>Мои желания 💝</h2><p>💖 Очень хочу · ✨ Классный вариант · 🎀 Всегда надо</p></div><p id="count"></p></div><div class="controls"><input id="search" type="search" placeholder="🔍 Поиск подарка" aria-label="Поиск"><select id="category"><option value="">Все категории</option><option>Красота</option><option>Одежда</option><option>Гаджеты</option><option>Творчество</option><option>Другое</option></select><select id="priority"><option value="">Все желания</option><option>Очень хочу</option><option>Классный вариант</option><option>Всегда надо</option></select></div><div id="grid" class="grid"><div class="empty">Загружаем подарки...</div></div><div class="note">💌 Самое главное для меня — ваше внимание! Спасибо, что вы рядом. Люблю вас ♡</div></main>
+<footer><strong>NASTYA'S ERA ✨</strong><p>Цветова Анастасия · 14 лет · Birthday Wishlist</p></footer>
+<dialog id="loginDialog"><h3>Вход Насти 🎀</h3><p class="hint">Только хозяйка списка может добавлять и изменять подарки. Войди через письмо на свою почту.</p><form id="loginForm"><label>Почта Насти<input id="ownerEmailInput" type="email" autocomplete="email" required></label><div class="form-actions"><button type="button" class="btn" data-close="loginDialog">Отмена</button><button class="btn primary" type="submit">Получить ссылку</button></div></form><p class="status" id="loginStatus" hidden></p></dialog>
+<dialog id="giftDialog"><h3 id="giftDialogTitle">Новый подарок 💖</h3><form id="giftForm"><input id="giftId" type="hidden"><label>Название подарка<input id="title" maxlength="120" required placeholder="Например, набор маркеров"></label><label>Что именно хочется?<textarea id="description" rows="2" maxlength="600" placeholder="Цвет, модель, размер и другие пожелания"></textarea></label><label>Ссылка на товар<input id="shopUrl" type="url" required maxlength="2000" placeholder="https://..."></label><label>Ссылка на фото товара<input id="imageUrl" type="url" maxlength="2000" placeholder="https://...jpg"></label><p class="hint">Для фотографии нужна прямая ссылка на картинку. Если её нет, появится 🎁.</p><label>Примерная цена в рублях<input id="price" type="number" min="0" step="0.01" placeholder="Например, 2500"></label><label>Насколько хочется?<select id="giftPriority"><option>Очень хочу</option><option>Классный вариант</option><option>Всегда надо</option></select></label><label>Категория<select id="giftCategory"><option>Красота</option><option>Одежда</option><option>Гаджеты</option><option>Творчество</option><option>Другое</option></select></label><div class="form-actions"><button type="button" class="btn" data-close="giftDialog">Отмена</button><button type="submit" class="btn pink">Сохранить 💖</button></div></form></dialog>
+<dialog id="reserveDialog"><h3>Бронируем подарок? 🎁</h3><p id="reserveText"></p><p class="hint">После успешного бронирования откроется страница товара в магазине. Подарок будет занят для всех, а ваше имя нигде не появится. Бронь не означает оплату или покупку. Отмену может выполнить организатор через базу данных.</p><div class="form-actions"><button class="btn" data-close="reserveDialog">Отмена</button><button class="btn primary" id="confirmReserve">Да, бронирую!</button></div></dialog>
+<dialog id="shopDialog"><h3>Подарок забронирован! 🎉</h3><p>Браузер не открыл магазин автоматически. Перейдите по ссылке ниже.</p><p><a id="fallbackShop" class="btn primary" href="#" target="_blank" rel="noopener noreferrer">Открыть товар ↗</a></p><div class="form-actions"><button class="btn" data-close="shopDialog">Закрыть</button></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script type="module">
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+
+// ШАГ 1: вставьте адрес проекта и PUBLISHABLE/ANON ключ из Supabase.
+// НИКОГДА не вставляйте сюда service_role или secret ключ!
+const SUPABASE_URL = 'PASTE_SUPABASE_URL_HERE';
+const SUPABASE_PUBLISHABLE_KEY = 'PASTE_SUPABASE_PUBLISHABLE_KEY_HERE';
+// ШАГ 2: та же почта Насти, что используется в setup.sql.
+const OWNER_EMAIL = 'NASTYA_EMAIL_HERE';
+
+const configured = /^https:\/\/[^/]+/.test(SUPABASE_URL) && !SUPABASE_URL.includes('PASTE_') && SUPABASE_PUBLISHABLE_KEY.length > 10 && !SUPABASE_PUBLISHABLE_KEY.includes('PASTE_') && OWNER_EMAIL.includes('@');
+const supabase = configured ? createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY) : null;
+const $ = id => document.getElementById(id);
+const esc = text => String(text ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const safeUrl = value => {
+  try { const url = new URL(String(value)); return url.protocol === 'https:' ? url.href : ''; }
+  catch { return ''; }
+};
+const money = value => value == null ? 'Цена не указана' : new Intl.NumberFormat('ru-RU', {maximumFractionDigits:2}).format(Number(value)) + ' ₽';
+const priorityLabel = p => ({'Очень хочу':'💖 Очень хочу','Классный вариант':'✨ Классный вариант','Всегда надо':'🎀 Всегда надо'})[p] || '🎁 Подарок';
+let gifts = [], isAdmin = false, bookingId = null, toastTimer, fetching = false, busy = false;
+function toast(message) { $('toast').textContent = message; $('toast').classList.add('visible'); clearTimeout(toastTimer); toastTimer = setTimeout(()=>$('toast').classList.remove('visible'), 3600); }
+function errorText(e) { console.error(e); return e?.message || 'Неизвестная ошибка'; }
+function setBusy(element, value) { element.disabled = value; element.setAttribute('aria-busy', String(value)); }
+function render() {
+  const q = $('search').value.trim().toLowerCase(), cat = $('category').value, pri = $('priority').value;
+  const filtered = gifts.filter(g => (!cat || g.category===cat) && (!pri || g.priority===pri) && `${g.title} ${g.description}`.toLowerCase().includes(q));
+  $('count').textContent = `${gifts.length} подарков · ${gifts.filter(g=>g.reserved).length} занято`;
+  $('grid').innerHTML = filtered.map(g => {
+    const photo=safeUrl(g.image_url), shop=safeUrl(g.shop_url);
+    const art=photo ? `<img src="${esc(photo)}" alt="${esc(g.title)}" loading="lazy">` : '<span class="placeholder">🎁</span>';
+    const reserve = g.reserved
+      ? '<button class="btn reserved" disabled>🔒 Уже забронировано</button>'
+      : `<button class="btn pink" data-action="reserve" data-id="${esc(g.id)}" ${shop?'':'disabled title="Настя ещё не добавила ссылку"'}>🎁 Забронировать и перейти ↗</button>`;
+    return `<article class="card"><div class="art"><span class="tag">${priorityLabel(g.priority)}</span>${art}</div><div class="body"><div class="category">${esc(g.category)}</div><h3>${esc(g.title)}</h3><div class="description">${esc(g.description)}</div><div class="price">${money(g.price)}</div><div class="actions">${isAdmin ? `<button class="btn" data-action="edit" data-id="${esc(g.id)}">✏️ Изменить</button><button class="btn" data-action="delete" data-id="${esc(g.id)}">🗑️ Удалить</button>` : reserve}</div>${g.reserved?'<p class="busy-note">Этот подарок уже выбрали. Кто именно, не показывается.</p>':''}</div></article>`;
+  }).join('') || '<div class="empty">Подарков с такими параметрами пока нет 💌</div>';
+  $('grid').querySelectorAll('.art img').forEach(img => img.addEventListener('error', () => {
+    const placeholder=document.createElement('span');placeholder.className='placeholder';placeholder.textContent='🎁';img.replaceWith(placeholder);
+  }, {once:true}));
+}
+async function refresh({showError=false}={}) {
+  if (!supabase || fetching) return;
+  fetching=true;
+  try {
+    const {data,error}=await supabase.from('gifts').select('id,title,description,price,image_url,shop_url,priority,category,reserved,created_at').order('created_at',{ascending:false});
+    if(error)throw error;
+    gifts=data ?? []; render();
+  } catch(error) { if(showError) toast('Не удалось обновить список: '+errorText(error)); else console.error(error); }
+  finally { fetching=false; }
+}
+async function ensureGuestSession() {
+  const {data,error}=await supabase.auth.getSession(); if(error)throw error;
+  if (data.session) return;
+  const signed=await supabase.auth.signInAnonymously(); if(signed.error)throw signed.error;
+}
+async function updateAuth() {
+  const {data,error}=await supabase.auth.getUser();
+  if(error && error.status!==400) console.error(error);
+  const user=data?.user;
+  isAdmin=Boolean(user?.email && user.email.toLowerCase()===OWNER_EMAIL.toLowerCase() && !user.is_anonymous);
+  document.body.classList.toggle('is-admin',isAdmin);
+  $('adminBtn').textContent=isAdmin?'Выйти из кабинета':'🔐 Вход Насти'; render();
+}
+async function init() {
+  if(!configured) { $('grid').innerHTML='<div class="empty">⚙️ Сначала внесите настройки Supabase по инструкции README.txt.</div>'; return; }
+  try { await ensureGuestSession(); await updateAuth(); await refresh({showError:true});
+    supabase.channel('gift-status-updates').on('postgres_changes', {event:'*',schema:'public',table:'gifts'}, () => refresh()).subscribe();
+    setInterval(()=>{if(!document.hidden)refresh();},15000);
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh();});
+    window.addEventListener('focus',()=>refresh());
+  }
+  catch(error) { $('grid').innerHTML='<div class="error-banner">Не удалось подключиться. Проверьте адрес, ключ проекта и разрешение анонимного входа.</div>'; toast(errorText(error)); }
+}
+$('adminBtn').addEventListener('click',async()=> {
+  if(!configured) return toast('Сначала настройте Supabase');
+  if(!isAdmin) { $('ownerEmailInput').value=OWNER_EMAIL; $('loginStatus').hidden=true; $('loginDialog').showModal(); return; }
+  try {
+    const {error}=await supabase.auth.signOut(); if(error)throw error;
+    await ensureGuestSession(); await updateAuth(); await refresh({showError:true}); toast('Вы вышли');
+  } catch(error) { toast('Не удалось выйти: '+errorText(error)); }
+});
+$('loginForm').addEventListener('submit',async e=>{
+  e.preventDefault(); const email=$('ownerEmailInput').value.trim().toLowerCase();
+  if(email!==OWNER_EMAIL.toLowerCase()) return toast('Это не адрес хозяйки списка');
+  const submit=$('loginForm').querySelector('button[type=submit]');setBusy(submit,true);
+  try {
+    const {error}=await supabase.auth.signInWithOtp({email,options:{emailRedirectTo:location.origin+location.pathname,shouldCreateUser:false}});
+    if(error)throw error;
+    $('loginStatus').hidden=false;$('loginStatus').textContent='Откройте ссылку из письма на этом же устройстве.';
+  } catch(error) { $('loginStatus').hidden=false; $('loginStatus').textContent='Ошибка отправки письма: '+errorText(error); }
+  finally {setBusy(submit,false);}
+});
+$('addBtn').addEventListener('click',()=> {if(!isAdmin)return; $('giftForm').reset();$('giftId').value='';$('giftDialogTitle').textContent='Новый подарок 💖';$('giftDialog').showModal();});
+$('grid').addEventListener('click',async e=> {
+  const b=e.target.closest('[data-action]');if(!b||busy)return;
+  const g=gifts.find(x=>x.id===b.dataset.id);if(!g)return;
+  if(b.dataset.action==='edit'&&isAdmin) {
+    $('giftId').value=g.id;$('title').value=g.title;$('description').value=g.description;
+    $('shopUrl').value=g.shop_url;$('imageUrl').value=g.image_url;$('price').value=g.price??'';
+    $('giftPriority').value=g.priority;$('giftCategory').value=g.category;$('giftDialogTitle').textContent='Изменить подарок ✏️';$('giftDialog').showModal();
+  }
+  if(b.dataset.action==='delete'&&isAdmin) {
+    if(!confirm(`Удалить «${g.title}»?${g.reserved ? ' Подарок уже забронирован!' : ''}`))return;busy=true;setBusy(b,true);
+    try {const {data,error}=await supabase.from('gifts').delete().eq('id',g.id).select('id');if(error)throw error;if(!data?.length)throw new Error('Удаление не разрешено');toast('Подарок удалён');await refresh({showError:true});}
+    catch(error){toast('Не удалилось: '+errorText(error));}finally{busy=false;setBusy(b,false);}
+  }
+  if(b.dataset.action==='reserve'&&!isAdmin&&!g.reserved) {
+    if(!safeUrl(g.shop_url))return toast('Для подарка не указана безопасная ссылка на магазин');
+    bookingId=g.id;$('reserveText').textContent=`Вы выбрали «${g.title}». После успешной брони будет открыта страница магазина. Подтвердить?`;$('reserveDialog').showModal();
+  }
+});
+$('giftForm').addEventListener('submit',async e=>{
+  e.preventDefault();if(!isAdmin||busy)return;
+  const id=$('giftId').value;
+  const item={title:$('title').value.trim(),description:$('description').value.trim(),shop_url:$('shopUrl').value.trim(),image_url:$('imageUrl').value.trim(),price:$('price').value===''?null:Number($('price').value),priority:$('giftPriority').value,category:$('giftCategory').value};
+  if(!item.title||!safeUrl(item.shop_url)||(item.image_url&&!safeUrl(item.image_url)))return toast('Название и HTTPS-ссылка на товар обязательны. Фото тоже должно использовать HTTPS.');
+  if(item.price!==null&&(!Number.isFinite(item.price)||item.price<0))return toast('Проверьте цену');
+  const submit=$('giftForm').querySelector('button[type=submit]');busy=true;setBusy(submit,true);
+  try {
+    const query=id?supabase.from('gifts').update(item).eq('id',id):supabase.from('gifts').insert(item);
+    const {data,error}=await query.select('id');if(error)throw error;
+    if(!data?.length)throw new Error('Нет доступа или подарок больше не существует');
+    $('giftDialog').close();toast('Подарок сохранён 💖');await refresh({showError:true});
+  } catch(error){toast('Не сохранилось: '+errorText(error));}finally{busy=false;setBusy(submit,false);}
+});
+$('reserveDialog').addEventListener('close',()=>{if(!busy)bookingId=null;});
+$('confirmReserve').addEventListener('click',async()=> {
+  if(!bookingId||busy)return;
+  const gift=gifts.find(g=>g.id===bookingId), shop=safeUrl(gift?.shop_url);
+  if(!shop)return toast('Ссылка магазина недоступна');
+  // Создаём вкладку прямо в обработчике нажатия: это снижает риск блокировки popup после await.
+  const tab=window.open('about:blank','_blank');
+  const btn=$('confirmReserve');busy=true;setBusy(btn,true);
+  try {
+    const {data,error}=await supabase.rpc('reserve_gift',{p_gift_id:bookingId});if(error)throw error;
+    if(data!==true){tab?.close();$('reserveDialog').close();toast('Этот подарок уже занят. Выберите другой.');await refresh({showError:true});return;}
+    $('reserveDialog').close();toast('Подарок забронирован! Открываем магазин 🎁');
+    if(tab){tab.opener=null;try {tab.location.replace(shop);} catch {tab.close();$('fallbackShop').href=shop;$('shopDialog').showModal();}} else {
+      $('fallbackShop').href=shop; $('shopDialog').showModal();
+    }
+    await refresh({showError:true});
+  } catch(error){tab?.close();toast('Бронь не создана: '+errorText(error));}
+  finally {busy=false;setBusy(btn,false);bookingId=null;}
+});
+$('search').addEventListener('input',render);$('category').addEventListener('change',render);$('priority').addEventListener('change',render);
+document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>$(b.dataset.close).close()));
+$('shareBtn').addEventListener('click',async()=> {
+  const link=location.origin+location.pathname;
+  if(!/^https:\/\//.test(link))return toast('Сначала опубликуйте сайт');
+  try { if(navigator.share) await navigator.share({title:'Вишлист Насти',url:link}); else if(navigator.clipboard) {await navigator.clipboard.writeText(link);toast('Ссылка скопирована 🔗');} else prompt('Скопируйте ссылку',link); }
+  catch(error){if(error.name!=='AbortError')toast('Не удалось поделиться ссылкой');}
+});
+if(configured) supabase.auth.onAuthStateChange(()=>setTimeout(()=>{updateAuth().then(()=>refresh({showError:true})).catch(error=>console.error(error));},0));
+init();
+</script>
+</body>
+</html>
